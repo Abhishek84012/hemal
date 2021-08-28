@@ -1,6 +1,4 @@
 from django.db import models
-# Create your models here.
-
 class Employee(models.Model):
     GENDER_CHOICES = (
         ('MALE', 'male'),

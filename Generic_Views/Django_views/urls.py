@@ -19,7 +19,10 @@ from views_type_app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.EmployeeListView.as_view(), name="employee_details"),
-    path('Create/', views.EmployeeCreateView.as_view(), name="CreateView"),
-    path('<pk>/Update/', views.EmployeeUpdateView.as_view(), name="UpdateView"),
-    path('<pk>/Delete/', views.EmployeeDeleteView.as_view(), name="DeleteView"),
+    path('employee_create/', views.EmployeeCreateView.as_view(),
+         name="employee_create"),
+    path('employee_update/<pk>/',
+         views.EmployeeUpdateView.as_view(), name="employee_update"),
+    path('employee_delete/<pk>/',
+         views.EmployeeDeleteView.as_view(), name="employee_delete"),
 ]
