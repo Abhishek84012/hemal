@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views import generic
-from views_type_app.models import Employee
+from employee_management.models import Employee
 from django.urls import reverse_lazy
 
 

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from views_type_app.models import Employee
+from employee_management.models import Employee
 # Register your models here.
 
 @admin.register(Employee)
